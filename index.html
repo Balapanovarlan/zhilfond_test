@@ -3,56 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <title>Zhilfond</title>
   </head>
   <body>
-    <header class="header adaptive">
-      <div class="header__info">
-        <div class="header__info-contacts">
-          <div class="header__info-item">
-            <img src="./src/assets/icons/Map_Pin.svg" alt="location">         
-            <span>просп. Республики 32</span>
-          </div>
-          <div class="header__info-item">
-            <img src="./src/assets/icons/mail.svg" alt="mail">
-            <span>info@zhilfond.kz</span>
-          </div>
-          <div class="header__info-item">
-            <img src="./src/assets/icons/phone.svg" alt="phone">
-            <span>+7 (7172) 28-09-59</span>
-          </div>
-          <div class="header__info-socials">
-            <a href="">
-              <img src="./src/assets/icons/insta.svg" alt="insta">
-            </a>
-            <a href="">
-              <img src="./src/assets/icons/facebook.svg" alt="facebook">
-            </a>
-            <a href="">
-              <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp">
-              <span>+7 (7172) 28-09-59</span>
-            </a>
-          </div>
-        </div>
-        <div class="header__info-actions">
-          <div class="theme-switcher">
-            <div class="theme-switcher__item">
-              <span>Светлая</span>
+    <header class="header ">
+      <div class="header__info-wrapper">
+        <div class="header__info adaptive">
+          <div class="header__info-container">
+            <div class="header__info-contacts">
+              <div class="header__info-item">
+                <img src="./src/assets/icons/Map_Pin.svg" alt="location">         
+                <span>просп. Республики 32</span>
+              </div>
+              <div class="header__info-item">
+                <img src="./src/assets/icons/mail.svg" alt="mail">
+                <span>info@zhilfond.kz</span>
+              </div>
+              <div class="header__info-item">
+                <img src="./src/assets/icons/phone.svg" alt="phone">
+                <span>+7 (7172) 28-09-59</span>
+              </div>
             </div>
-            <div class="theme-switcher__item">
-              <span>Темная</span>
+            <div class="header__info-socials">
+              <a href="#">
+                <img src="./src/assets/icons/insta.svg" alt="insta">
+              </a>
+              <a href="#">
+                <img src="./src/assets/icons/facebook.svg" alt="facebook">
+              </a>
+              <a href="#" class="header__info-item">
+                <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp">
+                <span>+7 (7172) 28-09-59</span>
+              </a>
             </div>
           </div>
-          <div class="lang-dropdown">
-            <button class="lang-option" data-lang="KZ">ҚАЗ</button>
-            <button class="lang-option" data-lang="RU">РУС</button>
-            <button class="lang-option" data-lang="EN">ENG</button>
+          <div class="header__info-actions">
+            <div class="theme-switcher">
+              <div class="theme-switcher__item">
+                <span>Светлая</span>
+              </div>
+              <div class="theme-switcher__item">
+                <span>Темная</span>
+              </div>
+            </div>
+            <div class="lang ">
+              <button class="lang-current">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="lang-arrow"
+                >
+                  <path d="M9 1L5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                <span class="lang-text">РУС</span>
+                  
+              </button>
+            </div>
+            <div class="lang-dropdown">
+              <button class="lang-option" data-lang="KZ">ҚАЗ</button>
+              <button class="lang-option" data-lang="RU">РУС</button>
+              <button class="lang-option" data-lang="EN">ENG</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header__main">
+      <div class="header__main adaptive">
         <img src="./src/assets/icons/logo.svg" alt="logo">
-        <nav class="nav adaptive">
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Новости</a>
@@ -63,22 +79,34 @@
           </ul>
         </nav>
         <button class="search-btn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#3B3E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
         <div class="header__links">
           <a href="#" class="header__link">
             <span class="header__link-text">Жилищные программы</span>
+            <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
           </a>
           <a href="#" class="header__link">
             <span class="header__link-text">Онлайн сервисы</span>
+            <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
           </a>
           <a href="#" class="header__link">
             <span class="header__link-text">Список очередников</span>
+            <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
           </a>
           <a href="#" class="header__link">
             <span class="header__link-text">Поиск номера очереди на жилье</span>
+            <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
           </a>
         </div>
         <div class="burger-menu">
@@ -95,26 +123,25 @@
             КГУ «Жилищный фонд» акимата города Астаны
           </h1>
         </div>
-        <img src="./src/assets/img/main__banner.png" alt="main-image">
+        <div class="hero__image-filter"></div>
+        <img class="hero__image" src="./src/assets/img/main__banner.jpg" alt="main-image">
       </section>
 
-      <section class="news adaptive">
+      <section class="news">
         <div class="news__header">
           <h2 class="news__title">
             Новости
           </h2>
           <a href="#" class="link-btn">
-            <span>Все новости</span>
-            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="#CAA44D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <span class="link-btn__text">Все новости</span>
+            <svg class="link-btn__arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>  
           </a>
         </div>
         <div class="news__list">
           <div class="news__item">
-            <div class="news__item-image">
-              <img src="./src/assets/img/news_1.png" alt="news-image">
-            </div>
+            <img class="news__item-image" src="./src/assets/img/news_1.png" alt="news-image">
             <div class="news__item-content">
               <div class="news__item-date">08.04.2024</div>
               <div class="news__item-title">
@@ -128,9 +155,7 @@
           </div>
 
           <div class="news__item">
-            <div class="news__item-image">
-              <img src="./src/assets/img/news_2.png" alt="news-image">
-            </div>
+            <img class="news__item-image" src="./src/assets/img/news_2.png" alt="news-image">
             <div class="news__item-content">
               <div class="news__item-date">08.04.2024</div>
               <div class="news__item-title">
@@ -144,9 +169,7 @@
           </div>
 
           <div class="news__item">
-            <div class="news__item-image">
-              <img src="./src/assets/img/news_3.png" alt="news-image">
-            </div>
+            <img class="news__item-image" src="./src/assets/img/news_3.jpg" alt="news-image">
             <div class="news__item-content">
               <div class="news__item-date">08.04.2024</div>
               <div class="news__item-title">
@@ -167,9 +190,9 @@
             Жилищные программы
           </h2>
           <a href="#" class="link-btn">
-            <span>Текущие программы</span>
-            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="#CAA44D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <span class="link-btn__text">Текущие программы</span>
+            <svg class="link-btn__arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>  
           </a>
         </div>
@@ -180,12 +203,10 @@
           <div class="housing-programs__item">
             <div class="housing-programs__item-image">
               <img src="./src/assets/img/housing_1.png" alt="">
-              <div class="housing-programs-filter housing-programs-filter--blue"></div>
-              <a href="#">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="#CAA44D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>  
-              </a>
+              <div class="housing-programs__item-filter"></div>
+              <svg class="housing-programs__item-arrow" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
             </div>
             <div class="housing-programs__item-content">
               <h3 class="housing-programs__item-title">
@@ -195,7 +216,7 @@
                 Льготная ипотечная программа предназначена для работающей молодежи до 35 лет, осуществляющих трудовую деятельность в определенных сферах
               </p>
               <a href="#" class="housing-programs__item-link">
-                <span>Подробнее</span>
+                <span class="housing-programs__item-link-text">Подробнее</span>
               </a>
             </div>
           </div>
@@ -206,68 +227,56 @@
         <div class="services__list">
 
           <div class="services__item">
-            <div class="services__item-icon">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="#CAA44D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="services__item-icon" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>  
-            </div>
             <div class="services__item-background"></div>
             <div class="services__item-content">
-              <div class="services__item-image">
-                <img src="./src/assets/img/services_1.png" alt="services-image">
-              </div>
+              <img src="./src/assets/img/services_1.png" alt="services-image" class="services__item-image">
               <h3 class="services__item-title">Написать обращение</h3>
             </div>
           </div>
 
           <div class="services__item">
-            <div class="services__item-icon">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-            </div>
+            <svg class="services__item-icon" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <div class="services__item-background"></div>
             <div class="services__item-content">
-              <div class="services__item-image">
-                <img src="./src/assets/img/services_2.png" alt="services-image">
-              </div>
+              <img src="./src/assets/img/services_2.png" alt="services-image" class="services__item-image">
               <h3 class="services__item-title">Запись на прием к руководству</h3>
             </div>
           </div>
 
           <div class="services__item">
-            <div class="services__item-icon">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-            </div>
+            <svg class="services__item-icon" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <div class="services__item-background"></div>
             <div class="services__item-content">
-              <div class="services__item-image">
-                <img src="./src/assets/img/services_3.png" alt="services-image">
-              </div>
+              <img src="./src/assets/img/services_3.png" alt="services-image" class="services__item-image">
               <h3 class="services__item-title">Постановка в очередь на жилье</h3>
             </div>
           </div>
 
           <div class="services__item">
-            <div class="services__item-icon">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-            </div>
+            <svg class="services__item-icon" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <div class="services__item-background"></div>
             <div class="services__item-content">
-              <div class="services__item-image">
-                <img src="./src/assets/img/services_4.png" alt="services-image">
-              </div>
+              <img src="./src/assets/img/services_4.png" alt="services-image" class="services__item-image">
               <h3 class="services__item-title">Приватизация жилища</h3>
             </div>
           </div>
 
           <div class="services__item">
-            <div class="services__item-icon">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-            </div>
+            <svg class="services__item-icon" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <div class="services__item-background"></div>
             <div class="services__item-content">
-              <div class="services__item-image">
-                <img src="./src/assets/img/services_5.png" alt="services-image">
-              </div>
+              <img src="./src/assets/img/services_5.png" alt="services-image" class="services__item-image">
               <h3 class="services__item-title">Выдача жилищных сертификатов</h3>
             </div>
           </div>
