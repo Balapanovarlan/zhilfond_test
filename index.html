@@ -67,7 +67,7 @@
         </div>
       </div>
       <div class="header__main adaptive">
-        <img src="./src/assets/icons/logo.svg" alt="logo">
+        <img src="./src/assets/icons/logo.svg" alt="logo" class="header__logo">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -284,84 +284,109 @@
       </section>
 
       <section class="info adaptive">
-        <div class="info__header">
-          <h2 class="info__title">
+        <h2 class="info__title">
             Информация
-          </h2>
-        </div>
+        </h2>
         <!-- вот тут будет слайдер от swiper -->
         <div class="info__content">
           <div class="info__item">
             <div class="info__item-background"></div>
             <div class="info__item-content">
-              <div class="info__item-image">
-                <img src="./src/assets/img/info_1.png" alt="info-image">
-              </div>
-              <h3 class="info__item-title">
+              <img src="./src/assets/img/info_1.png" alt="info-image" class="info__item-image">
                 <a href="#" class="info__item-link">
-                  <h3>Список граждан, восстановленных в очереди за 2019-2023 г.г.</h3>
+                  <h3 class="info__item-title">Список граждан, восстановленных в очереди за 2019-2023 г.г.</h3>
                 </a>
-              </h3>
+            </div>
+          </div>
+
+          <div class="info__item">
+            <div class="info__item-background"></div>
+            <div class="info__item-content">
+              <img src="./src/assets/img/info_1.png" alt="info-image" class="info__item-image">
+                <a href="#" class="info__item-link">
+                  <h3 class="info__item-title">Список граждан, восстановленных в очереди за 2019-2023 г.г.</h3>
+                </a>
+            </div>
+          </div>
+
+          <div class="info__item">
+            <div class="info__item-background"></div>
+            <div class="info__item-content">
+              <img src="./src/assets/img/info_1.png" alt="info-image" class="info__item-image">
+                <a href="#" class="info__item-link">
+                  <h3 class="info__item-title">Список граждан, восстановленных в очереди за 2019-2023 г.г.</h3>
+                </a>
+            </div>
+          </div>
+
+          <div class="info__item">
+            <div class="info__item-background"></div>
+            <div class="info__item-content">
+              <img src="./src/assets/img/info_1.png" alt="info-image" class="info__item-image">
+                <a href="#" class="info__item-link">
+                  <h3 class="info__item-title">Список граждан, восстановленных в очереди за 2019-2023 г.г.</h3>
+                </a>
             </div>
           </div>
         </div>
 
       </section>
     </main>
-    <footer class="footer adaptive">
-      <div class="footer__container">
-        <div class="footer__main"> 
-          <div class="footer__icons">
-            <img src="./src/assets/icons/logo.svg" alt="logo">
-            <div class="footer__gov">
-              <div class="footer__gov-item">
-                <img src="./src/assets/img/emblem.png" alt="Astana gerb">
-                <h2>Управление жилья и жилищной инспекции города Астаны</h2>
-              </div>
-              <div class="footer__gov-item">
-                <img src="./src/assets/img/emblem.png" alt="Astana gerb">
-                <h2>Управление жилья и жилищной инспекции города Астаны</h2>
-              </div>
-            </div>
-          </div>
-          <div class="footer__info">
-            <div class="footer__info-contacts">
-              <div class="footer__info-item">
-<!-- надо добавить иконки -->
-                <img src="./src/assets/icons/Map_Pin.svg" alt="location">
-                <span>г. Астана пр. Республики 32</span>
-              </div>
-              <div class="footer__info-item">
-                <img src="./src/assets/icons/phone.svg" alt="phone">
-                <span>+7 (7172) 28-09-59</span>
-              </div>
-              <div class="footer__info-item">
-                <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp">
-                <span>+7 (7172) 28-09-59</span>
+    <footer class="footer">
+      <div class="footer__wrapper adaptive"> 
+        <div class="footer__container">
+          <div class="footer__main"> 
+            <div class="footer__icons">
+              <img src="./src/assets/icons/logo.svg" alt="logo" class="footer__icons-logo">
+              <div class="footer__icons-gov">
+                <div class="footer__icons-gov-item">
+                  <img src="./src/assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
+                  <h2 class="footer__icons-gov-item-title">Управление жилья и жилищной инспекции города Астаны</h2>
+                </div>
+                <div class="footer__icons-gov-item">
+                  <img src="./src/assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
+                  <h2 class="footer__icons-gov-item-title">Акимат города Астаны</h2>
+                </div>
               </div>
             </div>
-            <div class="schedule">
-              <div class="schedule__item">
-                <img src="./src/assets/icons/navigation.svg" alt="navigation">
-                <span>График приема документов: Пн-Пт 08:30-17:00</span>
+            <div class="footer__info">
+              <div class="footer__info-contacts">
+                <div class="footer__info-item">
+                  <img src="./src/assets/icons/navigation.svg" alt="navigation">
+                  <span class="footer__info-item">г. Астана пр. Республики 32</span>
+                </div>
+                <div class="footer__info-item">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50246 2.25722C7.19873 1.4979 6.46332 1 5.64551 1H2.89474C1.8483 1 1 1.8481 1 2.89453C1 11.7892 8.21078 19 17.1055 19C18.1519 19 19 18.1516 19 17.1052L19.0005 14.354C19.0005 13.5361 18.5027 12.8009 17.7434 12.4971L15.1069 11.4429C14.4249 11.1701 13.6483 11.2929 13.0839 11.7632L12.4035 12.3307C11.6089 12.9929 10.4396 12.9402 9.7082 12.2088L7.79222 10.2911C7.06079 9.55962 7.00673 8.39134 7.66895 7.59668L8.23633 6.9163C8.70661 6.35195 8.83049 5.57516 8.55766 4.89309L7.50246 2.25722Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>    
+                  <span class="footer__info-item footer__info-item--bold">+7 (7172) 28-09-59</span>
+                </div>
+                <div class="footer__info-item">
+                  <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp">
+                  <span class="footer__info-item footer__info-item--green">+7 (7172) 28-09-59</span>
+                </div>
               </div>
-              <div class="schedule__item">
-                <span>Перерыв: 13:00-14:30</span>
-              </div>
-              <div class="schedule__item">
-                <span>График работы: Пн-Пт 08:30-18:00</span>
+              <div class="schedule">
+                <div class="schedule__item">
+                  <img src="./src/assets/icons/calendar.svg" alt="calendar">
+                  <span>График приема документов: Пн-Пт 08:30-17:00</span>
+                </div>
+                <div class="schedule__item">
+                  <span>Перерыв: 13:00-14:30</span>
+                </div>
+                <div class="schedule__item">
+                  <span>График работы: Пн-Пт 08:30-18:00</span>
+                </div>
               </div>
             </div>
+            <div class="footer__socials">
+              <img src="./src/assets/icons/insta.svg" alt="insta">
+              <img src="./src/assets/icons/facebook.svg" alt="facebook">
+            </div>
           </div>
-          <div class="footer__socials">
-            <img src="./src/assets/icons/insta.svg" alt="insta">
-            <img src="./src/assets/icons/facebook.svg" alt="facebook">
-          </div>
-        </div>
-        <!-- вот здесь должна быть яндекс карта -->
-        <div class="footer__map">
-          <div class="footer__map-image">
-            <img src="./src/assets/img/map_frame.png" alt="map">
+          <!-- вот здесь должна быть яндекс карта -->
+          <div class="footer__map">
+            <img src="./src/assets/img/map_frame.png" alt="map" class="footer__map-image">
           </div>
         </div>
       </div>
