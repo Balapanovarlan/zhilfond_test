@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/housing/housing.css">   
+    <title>Document</title>
+</head>
+<body>
+    <header class="header ">
+        <div class="header__info-wrapper">
+          <div class="header__info adaptive">
+            <div class="header__info-container">
+              <div class="header__info-contacts">
+                <div class="header__info-item">
+                  <img src="../assets/icons/Map_Pin.svg" alt="location">         
+                  <span>просп. Республики 32</span>
+                </div>
+                <div class="header__info-item">
+                  <img src="../assets/icons/mail.svg" alt="mail">
+                  <span>info@zhilfond.kz</span>
+                </div>
+                <div class="header__info-item">
+                  <img src="../assets/icons/phone.svg" alt="phone">
+                  <span>+7 (7172) 28-09-59</span>
+                </div>
+              </div>
+              <div class="header__info-socials">
+                <a href="#">
+                  <img src="../assets/icons/insta.svg" alt="insta">
+                </a>
+                <a href="#">
+                  <img src="../assets/icons/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="header__info-item">
+                  <img src="../assets/icons/whatsapp.svg" alt="whatsapp">
+                  <span>+7 (7172) 28-09-59</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__info-actions">
+              <div class="theme-switcher">
+                <div class="theme-switcher__item">
+                  <span>Светлая</span>
+                </div>
+                <div class="theme-switcher__item">
+                  <span>Темная</span>
+                </div>
+              </div>
+              <div class="lang ">
+                <button class="lang-current">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="lang-arrow"
+                  >
+                    <path d="M9 1L5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <span class="lang-text">РУС</span>
+                    
+                </button>
+              </div>
+              <div class="lang-dropdown">
+                <button class="lang-option" data-lang="KZ">ҚАЗ</button>
+                <button class="lang-option" data-lang="RU">РУС</button>
+                <button class="lang-option" data-lang="EN">ENG</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__main adaptive">
+          <img src="../assets/icons/logo.svg" alt="logo" class="header__logo">
+          <div class="header__main-container">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Об учереждении</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="search-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#3B3E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="header__links">
+              <a href="#" class="header__link">
+                <span class="header__link-text">Жилищные программы</span>
+                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>
+              <a href="#" class="header__link">
+                <span class="header__link-text">Онлайн сервисы</span>
+                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>
+              <a href="#" class="header__link">
+                <span class="header__link-text">Список очередников</span>
+                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>
+              <a href="#" class="header__link">
+                <span class="header__link-text">Поиск номера очереди на жилье</span>
+                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>
+            </div>
+            <div class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main adaptive">
+        <section class="housing-programs">
+            <div class="housing-programs__container">
+                <h1 class="housing-programs__title">Жилищные программы</h1>
+                <div class="housing-programs__list">
+                    <div class="housing-programs__item">
+                        <div class="housing-programs__item-image">
+                          <img src="../assets/img/housing_banner_1.png" alt="Housing program">
+                          <div class="housing-programs__item-filter"></div>
+                          <svg class="housing-programs__item-arrow" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>  
+                        </div>
+                        <div class="housing-programs__item-content">
+                          <h3 class="housing-programs__item-title">
+                            Программа «Бақытты отбасы»
+                          </h3>
+                          <p class="housing-programs__item-description">
+                            Ипотека для многодетных семей, семей, воспитывающих детей-инвалидов, детей сирот и детей, оставшиеся без попечения родителей, лиц с инвалидностью I и II группы
+                          </p>
+                          <a href="#" class="housing-programs__item-link">
+                            <span class="housing-programs__item-link-text">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="housing-programs__item">
+                        <div class="housing-programs__item-image">
+                          <img src="../assets/img/housing_banner_2.png" alt="Housing program">
+                          <div class="housing-programs__item-filter"></div>
+                          <svg class="housing-programs__item-arrow" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>  
+                        </div>
+                        <div class="housing-programs__item-content">
+                          <h3 class="housing-programs__item-title">
+                            Пилотная программа «Шаңырақ»
+                          </h3>
+                          <p class="housing-programs__item-description">
+                            Программа предназначена для всех категорий граждан, состоящих в очереди на жилье из коммунального жилищного фонда                          </p>
+                          <a href="#" class="housing-programs__item-link">
+                            <span class="housing-programs__item-link-text">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="housing-programs__item">
+                        <div class="housing-programs__item-image">
+                          <img src="../assets/img/housing_banner_3.png" alt="Housing program">
+                          <div class="housing-programs__item-filter"></div>
+                          <svg class="housing-programs__item-arrow" width="40" height="40" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>  
+                        </div>
+                        <div class="housing-programs__item-content">
+                          <h3 class="housing-programs__item-title">
+                            Программа «Elorda zhastary»
+                          </h3>
+                          <p class="housing-programs__item-description">
+                            Льготная ипотечная программа предназначена для работающей молодежи до 35 лет, осуществляющих трудовую деятельность в определенных сферах
+                          </p>
+                          <a href="#" class="housing-programs__item-link">
+                            <span class="housing-programs__item-link-text">Подробнее</span>
+                          </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq__container">
+               
+                <h1 class="faq__title">Часто задаваемые вопросы</h1>
+                <div class="accordion accordion--faq">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Кто имеет право на получение жилья от государства?</h2>
+                            <button class="accordion__btn">
+                            <svg class="accordion__btn-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            - ветераны Великой Отечественной войны; - дети-сироты, дети, оставшиеся без попечения родителей; - многодетные матери, награжденным подвесками «Алтын алқа», «Күміс алқа» или получившим ранее звание «Мать-героиня», а также награжденные орденами «Материнская слава» I и II степени, многодетные семьи. - социально уязвимые слои населения - государственные служащие, работники бюджетных организаций, военнослужащие, кандидаты в космонавты, космонавты, сотрудники специальных государственных органов и лица, занимающие государственные выборные должности; - граждане Республики Казахстан, единственное жилище которых признано аварийным в порядке, установленном законодательством Республики Казахстан.
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Кто имеет право на получение жилья от государства?</h2>
+                            <button class="accordion__btn">
+                            <svg class="accordion__btn-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            - ветераны Великой Отечественной войны; - дети-сироты, дети, оставшиеся без попечения родителей; - многодетные матери, награжденным подвесками «Алтын алқа», «Күміс алқа» или получившим ранее звание «Мать-героиня», а также награжденные орденами «Материнская слава» I и II степени, многодетные семьи. - социально уязвимые слои населения - государственные служащие, работники бюджетных организаций, военнослужащие, кандидаты в космонавты, космонавты, сотрудники специальных государственных органов и лица, занимающие государственные выборные должности; - граждане Республики Казахстан, единственное жилище которых признано аварийным в порядке, установленном законодательством Республики Казахстан.
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Кто имеет право на получение жилья от государства?</h2>
+                            <button class="accordion__btn">
+                            <svg class="accordion__btn-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            - ветераны Великой Отечественной войны; - дети-сироты, дети, оставшиеся без попечения родителей; - многодетные матери, награжденным подвесками «Алтын алқа», «Күміс алқа» или получившим ранее звание «Мать-героиня», а также награжденные орденами «Материнская слава» I и II степени, многодетные семьи. - социально уязвимые слои населения - государственные служащие, работники бюджетных организаций, военнослужащие, кандидаты в космонавты, космонавты, сотрудники специальных государственных органов и лица, занимающие государственные выборные должности; - граждане Республики Казахстан, единственное жилище которых признано аварийным в порядке, установленном законодательством Республики Казахстан.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+
+      <!-- Это как бы другая страница -->
+
+      <section class="schedule adaptive">
+        <div class="schedule__container">
+            <h1 class="schedule__title">График приема граждан</h1>
+            <p class="schedule__description">
+                График личного приема граждан директором КГУ «Жилищный фонд» акимата города Астаны и его заместителями
+            </p>
+            <div class="schedule__list">
+                <div class="schedule__item">
+                    <div class="schedule__item-header">
+                        <span class="schedule__item-grade">Должность</span>
+                        <h2 class="schedule__item-name">Романова Анастасия Григорьевна</h2>       
+                    </div>
+                    <div class="schedule__item-time">
+                        <h3 class="schedule__item-time-title">Еженедельно</h3>
+                        <h3 class="schedule__item-time-title">Понедельник с 16.00 до 18.00 </h3>
+                    </div>
+                    <button class="schedule__item-btn">
+                        <span class="schedule__item-btn-text">Записаться</span>
+                        <svg class="schedule__item-btn-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="schedule__item">
+                    <div class="schedule__item-header">
+                        <span class="schedule__item-grade">Должность</span>
+                        <h2 class="schedule__item-name">Попов Фёдор Глебович</h2>       
+                    </div>
+                    <div class="schedule__item-time">
+                        <h3 class="schedule__item-time-title">Еженедельно</h3>
+                        <h3 class="schedule__item-time-title">Понедельник с 16.00 до 18.00 </h3>
+                    </div>
+                    <button class="schedule__item-btn">
+                        <span class="schedule__item-btn-text">Записаться</span>
+                        <svg class="schedule__item-btn-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="schedule__item">
+                    <div class="schedule__item-header">
+                        <span class="schedule__item-grade">Должность</span>
+                        <h2 class="schedule__item-name">Суслова Мария Филипповна</h2>       
+                    </div>
+                    <div class="schedule__item-time">
+                        <h3 class="schedule__item-time-title">Еженедельно</h3>
+                        <h3 class="schedule__item-time-title">Понедельник с 16.00 до 18.00 </h3>
+                    </div>
+                    <button class="schedule__item-btn">
+                        <span class="schedule__item-btn-text">Записаться</span>
+                        <svg class="schedule__item-btn-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="schedule__item">
+                    <div class="schedule__item-header">
+                        <span class="schedule__item-grade">Должность</span>
+                        <h2 class="schedule__item-name">Рябов Дмитрий Дмитриевич</h2>       
+                    </div>
+                    <div class="schedule__item-time">
+                        <h3 class="schedule__item-time-title">Еженедельно</h3>
+                        <h3 class="schedule__item-time-title">Понедельник с 16.00 до 18.00 </h3>
+                    </div>
+                    <button class="schedule__item-btn">
+                        <span class="schedule__item-btn-text">Записаться</span>
+                        <svg class="schedule__item-btn-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__wrapper adaptive"> 
+          <div class="footer__container">
+            <div class="footer__main"> 
+              <div class="footer__icons">
+                <img src="../assets/icons/logo.svg" alt="logo" class="footer__icons-logo">
+                <div class="footer__icons-gov">
+                  <div class="footer__icons-gov-item">
+                    <img src="../assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
+                    <h2 class="footer__icons-gov-item-title">Управление жилья и жилищной инспекции города Астаны</h2>
+                  </div>
+                  <div class="footer__icons-gov-item">
+                    <img src="../assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
+                    <h2 class="footer__icons-gov-item-title">Акимат города Астаны</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__info">
+                <div class="footer__info-contacts">
+                  <div class="footer__info-item">
+                    <img src="../assets/icons/navigation.svg" alt="navigation">
+                    <span class="footer__info-item">г. Астана пр. Республики 32</span>
+                  </div>
+                  <div class="footer__info-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.50246 2.25722C7.19873 1.4979 6.46332 1 5.64551 1H2.89474C1.8483 1 1 1.8481 1 2.89453C1 11.7892 8.21078 19 17.1055 19C18.1519 19 19 18.1516 19 17.1052L19.0005 14.354C19.0005 13.5361 18.5027 12.8009 17.7434 12.4971L15.1069 11.4429C14.4249 11.1701 13.6483 11.2929 13.0839 11.7632L12.4035 12.3307C11.6089 12.9929 10.4396 12.9402 9.7082 12.2088L7.79222 10.2911C7.06079 9.55962 7.00673 8.39134 7.66895 7.59668L8.23633 6.9163C8.70661 6.35195 8.83049 5.57516 8.55766 4.89309L7.50246 2.25722Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                    <span class="footer__info-item footer__info-item--bold">+7 (7172) 28-09-59</span>
+                  </div>
+                  <div class="footer__info-item">
+                    <img src="../assets/icons/whatsapp.svg" alt="whatsapp">
+                    <span class="footer__info-item footer__info-item--green">+7 (7172) 28-09-59</span>
+                  </div>
+                </div>
+                <div class="schedule">
+                  <div class="schedule__item">
+                    <img src="../assets/icons/calendar.svg" alt="calendar">
+                    <span>График приема документов: Пн-Пт 08:30-17:00</span>
+                  </div>
+                  <div class="schedule__item">
+                    <span>Перерыв: 13:00-14:30</span>
+                  </div>
+                  <div class="schedule__item">
+                    <span>График работы: Пн-Пт 08:30-18:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__socials">
+                <img src="../assets/icons/insta.svg" alt="insta">
+                <img src="../assets/icons/facebook.svg" alt="facebook">
+              </div>
+            </div>
+            <!-- вот здесь должна быть яндекс карта -->
+            <div class="footer__map">
+              <img src="../assets/img/map_frame.png" alt="map" class="footer__map-image">
+            </div>
+          </div>
+        </div>
+      </footer> 
+</body>
+</html>

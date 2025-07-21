@@ -108,6 +108,7 @@ button,
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: clamp(10px, 1.2vw, 16px);
   color: white;
   padding: 10px 10px;
 }
@@ -150,8 +151,13 @@ button,
 .header__main {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+.header__main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
   padding: 15px 10px;
 }
 .header__links {
@@ -177,7 +183,7 @@ button,
   transition: border 0.2s ease-in;
 }
 .header__link-text {
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: clamp(10px, 1vw, 16px);
   color: #CAA44D;
   transition: color 0.2s ease-in;
 }
@@ -279,7 +285,7 @@ button,
 }
 .nav__item {
   text-transform: capitalize;
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: clamp(12px, 1.2vw, 16px);
 }
 @media (min-width: 768px) {
   .nav {
@@ -636,6 +642,7 @@ button,
   flex-direction: column;
   gap: 70px;
   color: #3B3E4F;
+  overflow: hidden;
 }
 .info__title {
   font-size: clamp(24px, 4vw, 48px);

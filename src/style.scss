@@ -139,11 +139,11 @@ button,
         width: 100%;
         display: flex;
         justify-content: space-between;
-
+        font-size: clamp(10px, 1.2vw, 16px);
         color: white;
         padding: 10px 10px;
         &-container{
-            @include align-center-gap(25px);
+          @include align-center-gap(25px);
         }
         &-contacts{
             @include align-center-gap(30px);
@@ -164,11 +164,13 @@ button,
     }
 
     &__main{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__main-container{
+      @include align-center-gap(20px);
+      padding: 15px 10px;
     }
     &__links{
       @include align-center-gap(20px);
@@ -184,7 +186,7 @@ button,
       border-radius: 12px;
       transition: border .2s ease-in;
       &-text{ 
-        font-size: clamp(14px, 1.5vw, 16px);
+        font-size: clamp(10px, 1vw, 16px);
         color: $color-main-yellow;
         transition: color .2s ease-in;
       }
@@ -288,7 +290,7 @@ button,
     }
     &__item{
         text-transform: capitalize;
-        font-size: clamp(14px, 1.5vw, 16px);
+        font-size: clamp(12px, 1.2vw, 16px);
     }
   @media(min-width: 768px){
     display: flex;
@@ -302,7 +304,6 @@ button,
   align-items: center;
   gap: 110px;
   padding: 0 10px 50px 10px;
-
   @media(min-width: 1024px){
     padding-bottom: 110px;
   }
@@ -607,6 +608,7 @@ button,
 .info{
   @include flex-column-gap(70px);
   color: $color-text-gray;
+  overflow: hidden;
   &__title{
     font-size: clamp(24px , 4vw , 48px);
   }
