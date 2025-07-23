@@ -97,6 +97,7 @@ button,
 .header__logo {
   width: 100%;
   max-width: 177px;
+  padding: 10px 0;
 }
 .header__info-wrapper {
   width: 100%;
@@ -298,12 +299,13 @@ button,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 110px;
+  gap: 50px;
   padding: 0 10px 50px 10px;
 }
 @media (min-width: 1024px) {
   .main {
     padding-bottom: 110px;
+    gap: 110px;
   }
 }
 
@@ -460,7 +462,7 @@ button,
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 40px;
 }
 .housing-programs__header {
   width: 100%;
@@ -475,9 +477,6 @@ button,
 .housing-programs__item {
   width: 100%;
   max-width: 385px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
   transition: border-color 0.3s ease-in;
   position: relative;
   border-bottom: 1px solid #3B3E4F;
@@ -519,6 +518,7 @@ button,
   display: block;
 }
 .housing-programs__item-content {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -540,10 +540,6 @@ button,
 .housing-programs__item:hover {
   border-color: #5BC4CB;
 }
-.housing-programs__item:hover .housing-programs__item-image {
-  max-height: 471px;
-  transform: scaleY(1.08);
-}
 .housing-programs__item:hover .housing-programs__item-arrow {
   opacity: 1;
 }
@@ -553,11 +549,78 @@ button,
 .housing-programs__item:hover .housing-programs__item-link-text, .housing-programs__item:hover .housing-programs__item-title {
   color: #5BC4CB;
 }
+@media (min-width: 1024px) {
+  .housing-programs {
+    gap: 70px;
+  }
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.housing-swiper-button-prev, .housing-swiper-button-next, .info-swiper-button-prev, .info-swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid transparent;
+  background-color: white;
+  transition: background-color 0.3s ease-in;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+.housing-swiper-button-prev:hover, .housing-swiper-button-next:hover, .info-swiper-button-prev:hover, .info-swiper-button-next:hover {
+  background-color: #5BC4CB;
+}
+.housing-swiper-button-prev:hover .housing-swiper-button-icon, .housing-swiper-button-prev:hover .info-swiper-button-icon, .housing-swiper-button-next:hover .housing-swiper-button-icon, .housing-swiper-button-next:hover .info-swiper-button-icon, .info-swiper-button-prev:hover .housing-swiper-button-icon, .info-swiper-button-prev:hover .info-swiper-button-icon, .info-swiper-button-next:hover .housing-swiper-button-icon, .info-swiper-button-next:hover .info-swiper-button-icon {
+  color: white;
+}
+@media (min-width: 1920px) {
+  .housing-swiper-button-prev, .housing-swiper-button-next, .info-swiper-button-prev, .info-swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.housing-swiper-button-prev, .info-swiper-button-prev {
+  left: 0;
+  transform: translate(0, -50%) rotate(180deg);
+}
+@media (min-width: 768px) {
+  .housing-swiper-button-prev, .info-swiper-button-prev {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.housing-swiper-button-next, .info-swiper-button-next {
+  right: 0;
+  transform: translate(0, -50%);
+}
+@media (min-width: 768px) {
+  .housing-swiper-button-next, .info-swiper-button-next {
+    transform: translate(50%, -50%);
+  }
+}
+
+.housing-swiper-button-icon, .info-swiper-button-icon {
+  color: #3B3E4F;
+  transition: color 0.3s ease-in;
+}
 
 .services {
   display: flex;
   flex-direction: column;
-  gap: 66px;
+  gap: 36px;
 }
 .services__title {
   font-size: clamp(24px, 5vw, 48px);
@@ -572,7 +635,7 @@ button,
 @media (min-width: 1024px) {
   .services__list {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 }
 .services__item {
@@ -636,13 +699,18 @@ button,
 .services__item:hover .services__item-title {
   color: white;
 }
+@media (min-width: 1024px) {
+  .services {
+    gap: 66px;
+  }
+}
 
 .info {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 40px;
   color: #3B3E4F;
-  overflow: hidden;
 }
 .info__title {
   font-size: clamp(24px, 4vw, 48px);
@@ -706,6 +774,11 @@ button,
 }
 .info__item:hover .info__item-title {
   color: white;
+}
+@media (min-width: 1024px) {
+  .info {
+    gap: 70px;
+  }
 }
 
 .footer {

@@ -1,321 +1,865 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/news/news.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/news/news.css" />
     <title>Document</title>
-</head>
-<body>
-    <header class="header ">
-        <div class="header__info-wrapper">
-          <div class="header__info adaptive">
-            <div class="header__info-container">
-              <div class="header__info-contacts">
-                <div class="header__info-item">
-                  <img src="../assets/icons/Map_Pin.svg" alt="location">         
-                  <span>просп. Республики 32</span>
-                </div>
-                <div class="header__info-item">
-                  <img src="../assets/icons/mail.svg" alt="mail">
-                  <span>info@zhilfond.kz</span>
-                </div>
-                <div class="header__info-item">
-                  <img src="../assets/icons/phone.svg" alt="phone">
-                  <span>+7 (7172) 28-09-59</span>
-                </div>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__info-wrapper">
+        <div class="header__info adaptive">
+          <div class="header__info-container">
+            <div class="header__info-contacts">
+              <div class="header__info-item">
+                <img src="../assets/icons/Map_Pin.svg" alt="location" />
+                <span>просп. Республики 32</span>
               </div>
-              <div class="header__info-socials">
-                <a href="#">
-                  <img src="../assets/icons/insta.svg" alt="insta">
-                </a>
-                <a href="#">
-                  <img src="../assets/icons/facebook.svg" alt="facebook">
-                </a>
-                <a href="#" class="header__info-item">
-                  <img src="../assets/icons/whatsapp.svg" alt="whatsapp">
-                  <span>+7 (7172) 28-09-59</span>
-                </a>
+              <div class="header__info-item">
+                <img src="../assets/icons/mail.svg" alt="mail" />
+                <span>info@zhilfond.kz</span>
+              </div>
+              <div class="header__info-item">
+                <img src="../assets/icons/phone.svg" alt="phone" />
+                <span>+7 (7172) 28-09-59</span>
               </div>
             </div>
-            <div class="header__info-actions">
-              <div class="theme-switcher">
-                <div class="theme-switcher__item">
-                  <span>Светлая</span>
-                </div>
-                <div class="theme-switcher__item">
-                  <span>Темная</span>
-                </div>
+            <div class="header__info-socials">
+              <a href="#">
+                <img src="../assets/icons/insta.svg" alt="insta" />
+              </a>
+              <a href="#">
+                <img src="../assets/icons/facebook.svg" alt="facebook" />
+              </a>
+              <a href="#" class="header__info-item">
+                <img src="../assets/icons/whatsapp.svg" alt="whatsapp" />
+                <span>+7 (7172) 28-09-59</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__info-actions">
+            <div class="theme-switcher">
+              <div class="theme-switcher__item">
+                <span>Светлая</span>
               </div>
-              <div class="lang ">
-                <button class="lang-current">
-                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"
+              <div class="theme-switcher__item">
+                <span>Темная</span>
+              </div>
+            </div>
+            <div class="lang">
+              <button class="lang-current">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   class="lang-arrow"
-                  >
-                    <path d="M9 1L5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <span class="lang-text">РУС</span>
-                    
-                </button>
-              </div>
-              <div class="lang-dropdown">
-                <button class="lang-option" data-lang="KZ">ҚАЗ</button>
-                <button class="lang-option" data-lang="RU">РУС</button>
-                <button class="lang-option" data-lang="EN">ENG</button>
-              </div>
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="lang-text">РУС</span>
+              </button>
+            </div>
+            <div class="lang-dropdown">
+              <button class="lang-option" data-lang="KZ">ҚАЗ</button>
+              <button class="lang-option" data-lang="RU">РУС</button>
+              <button class="lang-option" data-lang="EN">ENG</button>
             </div>
           </div>
         </div>
-        <div class="header__main adaptive">
-          <img src="../assets/icons/logo.svg" alt="logo" class="header__logo">
-          <div class="header__main-container">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Новости</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Об учереждении</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="search-btn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#3B3E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </div>
+      <div class="header__main adaptive">
+        <img src="../assets/icons/logo.svg" alt="logo" class="header__logo" />
+        <div class="header__main-container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Новости</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Об учереждении</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="search-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
+                stroke="#3B3E4F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="header__links">
+            <a href="#" class="header__link">
+              <span class="header__link-text">Жилищные программы</span>
+              <svg
+                class="header__link-arrow"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
+            </a>
+            <a href="#" class="header__link">
+              <span class="header__link-text">Онлайн сервисы</span>
+              <svg
+                class="header__link-arrow"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="header__link">
+              <span class="header__link-text">Список очередников</span>
+              <svg
+                class="header__link-arrow"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="header__link">
+              <span class="header__link-text"
+                >Поиск номера очереди на жилье</span
+              >
+              <svg
+                class="header__link-arrow"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main adaptive">
+      <section class="news">
+        <div class="news__header">
+          <h1 class="news__title">
+            Результаты программы «Арендное жилье без права выкупа для категорий
+            социально уязвимых слоев населения»
+          </h1>
+          <span class="news__date">21.07.2025</span>
+        </div>
+        <div class="news__content">
+          <img
+            src="../assets/img/news_1.png"
+            alt="news_img"
+            class="news__image"
+          />
+          <p class="news__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+            massa sed elementum tempus egestas sed sed. Quam nulla porttitor
+            massa id neque aliquam vestibulum morbi. Mi in nulla posuere
+            sollicitudin aliquam ultrices sagittis orci a. Eu volutpat odio
+            facilisis mauris sit amet massa vitae. Justo eget magna fermentum
+            iaculis eu non diam phasellus. Ultrices mi tempus imperdiet nulla
+            malesuada pellentesque elit eget gravida. Sem et tortor consequat id
+            porta nibh venenatis cras sed. In fermentum posuere urna nec
+            tincidunt praesent semper. Est ullamcorper eget nulla facilisi etiam
+            dignissim diam. Etiam non quam lacus suspendisse faucibus. Fringilla
+            urna porttitor rhoncus dolor purus non enim. Aliquet risus feugiat
+            in ante metus dictum at tempor commodo. Faucibus a pellentesque sit
+            amet porttitor. Risus pretium quam vulputate dignissim suspendisse
+            in est ante. Est ultricies integer quis auctor elit. Dictumst
+            quisque sagittis purus sit amet volutpat consequat. Interdum
+            consectetur libero id faucibus nisl tincidunt. Dui ut ornare lectus
+            sit amet est placerat. In ornare quam viverra orci sagittis eu
+            volutpat odio. Aliquet porttitor lacus luctus accumsan tortor
+            posuere ac ut. Mus mauris vitae ultricies leo integer. Enim nulla
+            aliquet porttitor lacus luctus. Facilisis volutpat est velit egestas
+            dui id ornare. Consequat ac felis donec et odio pellentesque. Sed
+            felis eget velit aliquet sagittis id consectetur purus. Scelerisque
+            viverra mauris in aliquam sem. Senectus et netus et malesuada fames
+            ac turpis egestas..
+          </p>
+        </div>
+      </section>
+
+      <section class="other-news">
+        <h1 class="other-news__title">Другие новости</h1>
+        <div class="other-news__container">
+          <div class="other-news__list">
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_1.png"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_2.png"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_2.png"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_3.jpg"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_1.png"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+            <div class="other-news__item">
+              <img
+                src="../assets/img/news_2.png"
+                alt="news_img"
+                class="other-news__image"
+              />
+              <h2 class="other-news__item-title">
+                Результаты программы «Арендное жилье без права выкупа для
+                категорий социально уязвимых слоев населения»
+              </h2>
+              <span class="other-news__date">21.07.2025</span>
+            </div>
+          </div>
+          <div class="pagination pagination--news">
+            <button class="pagination__btn pagination__btn--prev">Назад</button>
+            <div class="pagination__pages">
+              <button class="pagination__page">1</button>
+              <button class="pagination__page">2</button>
+              <button class="pagination__page">3</button>
+              <button class="pagination__page">4</button>
+            </div>
+            <button class="pagination__btn pagination__btn--next">
+              Следующая
             </button>
-            <div class="header__links">
-              <a href="#" class="header__link">
-                <span class="header__link-text">Жилищные программы</span>
-                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>  
-              </a>
-              <a href="#" class="header__link">
-                <span class="header__link-text">Онлайн сервисы</span>
-                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>  
-              </a>
-              <a href="#" class="header__link">
-                <span class="header__link-text">Список очередников</span>
-                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>  
-              </a>
-              <a href="#" class="header__link">
-                <span class="header__link-text">Поиск номера очереди на жилье</span>
-                <svg class="header__link-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 16L16.5 8M16.5 8H10.5M16.5 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>  
-              </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="common">
+        <h1 class="common__title">Общая информация</h1>
+        <div class="accordion">
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">Общие положения</h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="burger-menu">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Юридический статус Учреждения
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Предмет и цели деятельности Учреждения
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Управление Учреждением
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Порядок образования имущества Учреждения
+                </h2>
+              </div>
+                <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Режим работы Учреждения
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Порядок внесения изменений и дополнений в учредительные
+                  документы
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+                <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              <div class="accordion__header-container">
+                <img
+                  src="../assets/icons/Folder_Open.svg"
+                  alt="folder"
+                  class="accordion__icon"
+                />
+                <h2 class="accordion__item-title">
+                  Условия реорганизации и ликвидации Учреждения
+                </h2>
+              </div>
+              <button class="accordion__btn">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__arrow"
+                >
+                  <path
+                    d="M9 1L5 5L1 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__body">
+              <p class="accordion__text">
+                Коммунальное государственное учреждение «Жилищный фонд» акимата
+                города Астаны (далее – Учреждение) является некоммерческой
+                организацией, обладающей статусом юридического лица, созданной в
+                организационно-правовой форме учреждения для осуществления
+                функций по учету и содержанию государственного жилищного фонда
+                города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение
+                создано постановлением акимата города Астаны от 22 мая 2018 года
+                № 158-902. 4. Учредителем Учреждения является акимат города
+                Астаны. 5. Уполномоченным органом Учреждения является
+                Государственное учреждение «Управление жилья и жилищной
+                инспекции города Астаны» (далее – уполномоченный орган). 6.
+                Полное наименование Учреждения: на государственном языке: Астана
+                қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік
+                мекемесі; на русском языке: Коммунальное государственное
+                учреждение «Жилищный фонд» акимата города Астаны. 7. Место
+                нахождения Учреждения: Республика Казахстан, Z00T0X1, город
+                Астана, район «Байконыр, проспект Республики, 32.
+              </p>
             </div>
           </div>
         </div>
-      </header>
-    
+      </section>
+    </main>
 
-      <main class="main adaptive">
-        <section class="news">
-            <div class="news__header">
-                <h1 class="news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h1>
-                <span class="news__date">21.07.2025</span>
-            </div>
-            <div class="news__content">
-                <img src="../assets/img/news_1.png" alt="news_img" class="news__image">
-                <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa sed elementum tempus egestas sed sed. Quam nulla porttitor massa id neque aliquam vestibulum morbi. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Eu volutpat odio facilisis mauris sit amet massa vitae. Justo eget magna fermentum iaculis eu non diam phasellus. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Sem et tortor consequat id porta nibh venenatis cras sed. In fermentum posuere urna nec tincidunt praesent semper. Est ullamcorper eget nulla facilisi etiam dignissim diam. Etiam non quam lacus suspendisse faucibus. Fringilla urna porttitor rhoncus dolor purus non enim. Aliquet risus feugiat in ante metus dictum at tempor commodo. Faucibus a pellentesque sit amet porttitor. Risus pretium quam vulputate dignissim suspendisse in est ante. Est ultricies integer quis auctor elit. Dictumst quisque sagittis purus sit amet volutpat consequat. Interdum consectetur libero id faucibus nisl tincidunt. Dui ut ornare lectus sit amet est placerat. In ornare quam viverra orci sagittis eu volutpat odio. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Mus mauris vitae ultricies leo integer. Enim nulla aliquet porttitor lacus luctus. Facilisis volutpat est velit egestas dui id ornare. Consequat ac felis donec et odio pellentesque. Sed felis eget velit aliquet sagittis id consectetur purus. Scelerisque viverra mauris in aliquam sem. Senectus et netus et malesuada fames ac turpis egestas..</p>
-            </div>
-        </section>
-
-        <section class="other-news">
-            <h1 class="other-news__title">Другие новости</h1>
-            <div class="other-news__container">
-                <div class="other-news__list">
-                    <div class="other-news__item">
-                        <img src="../assets/img/news_1.png" alt="news_img" class="other-news__image">
-                        <h2 class="other-news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h2>
-                        <span class="other-news__date">21.07.2025</span>
-                    </div>
-                    <div class="other-news__item">
-                            <img src="../assets/img/news_2.png" alt="news_img" class="other-news__image">
-                            <h2 class="other-news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h2>
-                            <span class="other-news__date">21.07.2025</span>
-                    </div>
-                    <div class="other-news__item">
-                        <img src="../assets/img/news_3.png" alt="news_img" class="other-news__image">
-                        <h2 class="other-news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h2>
-                        <span class="other-news__date">21.07.2025</span>
-                    </div>
-                    <div class="other-news__item">
-                        <img src="../assets/img/news_1.png" alt="news_img" class="other-news__image">
-                        <h2 class="other-news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h2>
-                        <span class="other-news__date">21.07.2025</span>
-                    </div>
-                    <div class="other-news__item">
-                        <img src="../assets/img/news_2.png" alt="news_img" class="other-news__image">
-                        <h2 class="other-news__title">Результаты программы «Арендное жилье без права выкупа для категорий социально уязвимых слоев населения»</h2>
-                        <span class="other-news__date">21.07.2025</span>
-                    </div>
-                    <div class = "pagination pagination--news">
-                        <button class="pagination__btn pagination__btn--prev">
-                            Назад
-                        </button>
-                        <div class="pagination__pages">
-                            <button class="pagination__page">1</button>
-                            <button class="pagination__page">2</button>
-                            <button class="pagination__page">3</button>
-                            <button class="pagination__page">4</button>
-                        </div>
-                        <button class="pagination__btn pagination__btn--next">
-                            Следующая 
-                        </button>
-                    </div>
+    <footer class="footer">
+      <div class="footer__wrapper adaptive">
+        <div class="footer__container">
+          <div class="footer__main">
+            <div class="footer__icons">
+              <img
+                src="../assets/icons/logo.svg"
+                alt="logo"
+                class="footer__icons-logo"
+              />
+              <div class="footer__icons-gov">
+                <div class="footer__icons-gov-item">
+                  <img
+                    src="../assets/img/emblem.png"
+                    alt="Astana gerb"
+                    class="footer__icons-gov-item-image"
+                  />
+                  <h2 class="footer__icons-gov-item-title">
+                    Управление жилья и жилищной инспекции города Астаны
+                  </h2>
                 </div>
-            </div>
-        </section>
-
-        <section class = "common">
-            <h1 class="common__title">Общая информация</h1>
-            <div class="common__accordion">
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Общие положения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Юридический статус Учреждения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Предмет и цели деятельности Учреждения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Управление Учреждением</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Порядок образования имущества Учреждения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Режим работы Учреждения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Порядок внесения изменений и дополнений в учредительные документы</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-                <div class="common__accordion-item">
-                    <div class="common__accordion-item-header">
-                        <img src="../assets/icons/Folder_Open.svg" alt="folder" class="common__accordion-icon">
-                        <h2 class="common__accordion-item-title">Условия реорганизации и ликвидации Учреждения</h2>
-                    </div>
-                    <div class="common__accordion-item-content">
-                        <p class="common__accordion-item-text">Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны (далее – Учреждение) является некоммерческой организацией, обладающей статусом юридического лица, созданной в организационно-правовой форме учреждения для осуществления функций по учету и содержанию государственного жилищного фонда города Астаны. 2. Вид Учреждения: коммунальное. 3. Учреждение создано постановлением акимата города Астаны от 22 мая 2018 года № 158-902. 4. Учредителем Учреждения является акимат города Астаны. 5. Уполномоченным органом Учреждения является Государственное учреждение «Управление жилья и жилищной инспекции города Астаны» (далее – уполномоченный орган). 6. Полное наименование Учреждения: на государственном языке: Астана қаласы әкімдігінің «Тұрғын үй қоры» коммуналдық мемлекеттік мекемесі; на русском языке: Коммунальное государственное учреждение «Жилищный фонд» акимата города Астаны. 7. Место нахождения Учреждения: Республика Казахстан, Z00T0X1, город Астана, район «Байконыр, проспект Республики, 32.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="footer__wrapper adaptive"> 
-          <div class="footer__container">
-            <div class="footer__main"> 
-              <div class="footer__icons">
-                <img src="../assets/icons/logo.svg" alt="logo" class="footer__icons-logo">
-                <div class="footer__icons-gov">
-                  <div class="footer__icons-gov-item">
-                    <img src="../assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
-                    <h2 class="footer__icons-gov-item-title">Управление жилья и жилищной инспекции города Астаны</h2>
-                  </div>
-                  <div class="footer__icons-gov-item">
-                    <img src="../assets/img/emblem.png" alt="Astana gerb" class="footer__icons-gov-item-image">
-                    <h2 class="footer__icons-gov-item-title">Акимат города Астаны</h2>
-                  </div>
+                <div class="footer__icons-gov-item">
+                  <img
+                    src="../assets/img/emblem.png"
+                    alt="Astana gerb"
+                    class="footer__icons-gov-item-image"
+                  />
+                  <h2 class="footer__icons-gov-item-title">
+                    Акимат города Астаны
+                  </h2>
                 </div>
               </div>
-              <div class="footer__info">
-                <div class="footer__info-contacts">
-                  <div class="footer__info-item">
-                    <img src="../assets/icons/navigation.svg" alt="navigation">
-                    <span class="footer__info-item">г. Астана пр. Республики 32</span>
-                  </div>
-                  <div class="footer__info-item">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.50246 2.25722C7.19873 1.4979 6.46332 1 5.64551 1H2.89474C1.8483 1 1 1.8481 1 2.89453C1 11.7892 8.21078 19 17.1055 19C18.1519 19 19 18.1516 19 17.1052L19.0005 14.354C19.0005 13.5361 18.5027 12.8009 17.7434 12.4971L15.1069 11.4429C14.4249 11.1701 13.6483 11.2929 13.0839 11.7632L12.4035 12.3307C11.6089 12.9929 10.4396 12.9402 9.7082 12.2088L7.79222 10.2911C7.06079 9.55962 7.00673 8.39134 7.66895 7.59668L8.23633 6.9163C8.70661 6.35195 8.83049 5.57516 8.55766 4.89309L7.50246 2.25722Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>    
-                    <span class="footer__info-item footer__info-item--bold">+7 (7172) 28-09-59</span>
-                  </div>
-                  <div class="footer__info-item">
-                    <img src="../assets/icons/whatsapp.svg" alt="whatsapp">
-                    <span class="footer__info-item footer__info-item--green">+7 (7172) 28-09-59</span>
-                  </div>
+            </div>
+            <div class="footer__info">
+              <div class="footer__info-contacts">
+                <div class="footer__info-item">
+                  <img src="../assets/icons/navigation.svg" alt="navigation" />
+                  <span class="footer__info-item"
+                    >г. Астана пр. Республики 32</span
+                  >
                 </div>
-                <div class="schedule">
-                  <div class="schedule__item">
-                    <img src="../assets/icons/calendar.svg" alt="calendar">
-                    <span>График приема документов: Пн-Пт 08:30-17:00</span>
-                  </div>
-                  <div class="schedule__item">
-                    <span>Перерыв: 13:00-14:30</span>
-                  </div>
-                  <div class="schedule__item">
-                    <span>График работы: Пн-Пт 08:30-18:00</span>
-                  </div>
+                <div class="footer__info-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.50246 2.25722C7.19873 1.4979 6.46332 1 5.64551 1H2.89474C1.8483 1 1 1.8481 1 2.89453C1 11.7892 8.21078 19 17.1055 19C18.1519 19 19 18.1516 19 17.1052L19.0005 14.354C19.0005 13.5361 18.5027 12.8009 17.7434 12.4971L15.1069 11.4429C14.4249 11.1701 13.6483 11.2929 13.0839 11.7632L12.4035 12.3307C11.6089 12.9929 10.4396 12.9402 9.7082 12.2088L7.79222 10.2911C7.06079 9.55962 7.00673 8.39134 7.66895 7.59668L8.23633 6.9163C8.70661 6.35195 8.83049 5.57516 8.55766 4.89309L7.50246 2.25722Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="footer__info-item footer__info-item--bold"
+                    >+7 (7172) 28-09-59</span
+                  >
+                </div>
+                <div class="footer__info-item">
+                  <img src="../assets/icons/whatsapp.svg" alt="whatsapp" />
+                  <span class="footer__info-item footer__info-item--green"
+                    >+7 (7172) 28-09-59</span
+                  >
                 </div>
               </div>
-              <div class="footer__socials">
-                <img src="../assets/icons/insta.svg" alt="insta">
-                <img src="../assets/icons/facebook.svg" alt="facebook">
+              <div class="footer__schedule">
+                <div class="footer__schedule-item">
+                  <img src="../assets/icons/calendar.svg" alt="calendar" />
+                  <span>График приема документов: Пн-Пт 08:30-17:00</span>
+                </div>
+                <div class="footer__schedule-item">
+                  <span>Перерыв: 13:00-14:30</span>
+                </div>
+                <div class="footer__schedule-item">
+                  <span>График работы: Пн-Пт 08:30-18:00</span>
+                </div>
               </div>
             </div>
-            <!-- вот здесь должна быть яндекс карта -->
-            <div class="footer__map">
-              <img src="../assets/img/map_frame.png" alt="map" class="footer__map-image">
+            <div class="footer__socials">
+              <img src="../assets/icons/insta.svg" alt="insta" />
+              <img src="../assets/icons/facebook.svg" alt="facebook" />
             </div>
           </div>
+          <!-- вот здесь должна быть яндекс карта -->
+          <div class="footer__map">
+            <img
+              src="../assets/img/map_frame.png"
+              alt="map"
+              class="footer__map-image"
+            />
+          </div>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+    <script  src="../js/news-accordion.js"></script>
+  </body>
 </html>
